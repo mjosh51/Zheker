@@ -16,7 +16,7 @@ import Check from '/path-to-check.js';
 router.post('/', Check('email').isEmail(), auth);
 router.post('/', Check('password').isPassword(), auth);
 ```
-isEmail() checks if the req.body.email is a valid email address
+isEmail() checks if the req.body.email is a valid email address, \n
 isPassword() checks if the req.body.password is a valid password
 
 Others are isFirstName(), isLastName(), isPhone(), isShortText(), isLongText(). These functions each validate input and filter out dangerous entries.
